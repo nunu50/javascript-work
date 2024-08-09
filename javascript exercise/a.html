@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let para = document.createElement('p');
+        para.style.color = 'red';
+        para.textContent = "hey i am red"
+        document.body.appendChild(para);
+
+
+        let h2 = document.createElement('h2');
+        h2.textContent="i am me";
+        h2.style.color = "fuchsia";
+        h2.setAttribute('style', 'display:inline; background:black; color:white; font-family:cursive; text-align:center; text-decoration:underline;');
+        document.body.appendChild(h2);
+
+        let h3 = document.createElement('h3');
+        h3.style.color = 'blue';
+        h3.textContent = "hey i am a blue h3";
+        document.body.appendChild(h3);
+
+
+        let div = document.createElement('div');
+        div.setAttribute('style', 'background:pink; border:2px solid pink; border-radius:20px;');
+       document.body.appendChild(div);
+
+
+       let h1 = document.createElement('h1');
+       h1.textContent = "i am in div";
+      div.appendChild(h1);
+
+
+      let parag = document.createElement('p');
+      parag.textContent = "me  too!";
+      div.appendChild(parag);
+    </script>
+</body>
+</html>
+
